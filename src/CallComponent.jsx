@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Peer from "simple-peer";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:5001"); // Assuming your server is running on port 5001
+const socket = io.connect("https://chatserver-mu.vercel.app/"); // Assuming your server is running on port 5001
 
 const CallComponent = () => {
   const [yourID, setYourID] = useState("");
